@@ -17,8 +17,7 @@ server.get("/senai", (request, response) => {
 server.post("/", (request, response) => {
  console.log(request.body);
 
- response.json(request.body);
+ response.sendStatus(200);
 })
-let carros = [];
 
 server.listen(PORTA, () => console.log("Meu servidor tá funcionando na porta:", PORTA));
